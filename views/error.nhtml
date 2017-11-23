@@ -1,0 +1,3 @@
+<#@ alias "error" #>
+#{context.error.message}
+#{context.error.stack}

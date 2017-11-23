@@ -1,0 +1,35 @@
+{
+  "AppName": "api-new-ui-gen",
+  "hosts": {
+    "api-new-ui-gen": {
+      "host": "localhost",
+      "port": 3003
+    }
+  },
+  "subscriptions": {
+    "host": "localhost",
+    "port": 3004
+  },
+  "db": {
+    "api": {
+      "url": "mongodb://localhost/api-curators-group"
+    },
+    "api2": {
+      "url": "mysql://root:toor@127.0.0.1/api-new-ui-gen-test",
+      "config": {
+        "host": "127.0.0.1",
+        "dialect": "mysql",
+        "pool": {
+          "max": 5,
+          "min": 0,
+          "idle": 10000
+        }
+      }
+    }
+  },
+  "passport": {
+    "salt2": "aW/sPfrYMjn2Wh6v6jQAnYhJzHSTZqitDiiASvrNtJma3+gHjdCkYw==",
+    "secret": "THE VERY api-new-ui-gen AuaVlY5R1Z5hWfdjVDC3qqUBSQVgx3mqDROlU0xJQziwC0mhVjCZ9Q== ONE",
+    "expiresIn": "1h"
+  }
+}

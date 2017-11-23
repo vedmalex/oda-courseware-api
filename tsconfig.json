@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": true,
+    "noImplicitAny": false,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "allowSyntheticDefaultImports": false,
+    "pretty": true,
+    "removeComments": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "@types/graphql",
+      "@types/node"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

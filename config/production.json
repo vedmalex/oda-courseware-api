@@ -1,0 +1,23 @@
+{
+  "AppName": "api-new-ui-gen",
+  "hosts": {
+    "api-new-ui-gen": {
+      "host": "0.0.0.0",
+      "port": 3003
+    }
+  },
+  "subscriptions": {
+    "host": "localhost",
+    "port": 3004
+  },
+  "db": {
+    "api": {
+      "url": "mongodb://localhost/api-new-ui-gen-prod"
+    }
+  },
+  "passport": {
+    "salt2": "Kz2o6vJaSrzRQ3kEbGKHjg1OEvdhYhsaKYMGaNpR6B8OiER8AKRKQg==",
+    "secret": "THE VERY api-new-ui-gen  AuaVlY5R1Z5hWfdjVDC3qqUBSQVgx3mqDROlU0xJQziwC0mhVjCZ9Q== ONE",
+    "expiresIn": "1h"
+  }
+}
