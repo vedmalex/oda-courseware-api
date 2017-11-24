@@ -1,8 +1,8 @@
 import { common } from 'oda-gen-graphql';
-import { StudentEntity } from './Student';
+import { PersonEntity } from './Person';
 
 export class Overrides extends common.types.GQLModule {
   protected _extend = [
-    // new StudentEntity({}),
+    new PersonEntity({}),
   ];
 }

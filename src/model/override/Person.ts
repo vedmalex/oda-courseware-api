@@ -15,17 +15,9 @@ import { idToCursor, emptyConnection, pagination, detectCursorDirection, consts,
 import { lib } from 'oda-gen-common';
 const { selectionTree: traverse } = lib;
 
-export class StudentEntity extends common.types.GQLModule {
+export class PersonEntity extends common.types.GQLModule {
   protected _resolver = {
-    Student: {
-      fullName: async (
-        { _id: id }, // owner id
-        args,
-        context: { connectors: RegisterConnectors },
-        info) => {
-        let student = await context.connectors.Student.findOneById(id);
-        return `${student.firstName} ${student.middleName} ${student.lastName}`;
-      },
+    Person: {
       ages: async (
         { _id: id,
           dateOfBirth,
