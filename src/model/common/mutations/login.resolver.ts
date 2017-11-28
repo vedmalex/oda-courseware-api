@@ -3,6 +3,7 @@ import { passport } from 'oda-api-common';
 import { common } from 'oda-gen-graphql';
 
 export class LoginUserMutation extends common.types.GQLModule {
+  protected _name = 'LoginUserMutation';
   protected _mutation = {
     loginUser: mutateAndGetPayload(
       async (

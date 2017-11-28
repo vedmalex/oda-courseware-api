@@ -11,6 +11,7 @@ const fixupPassword = (target) => async (root: any, args: {
 };
 
 export class FixupPasswordHook extends common.types.GQLModule {
+  protected _name = 'FixupPasswordHook';
   protected _hooks = [
     {
       'RootMutation.createUser': fixupPassword,

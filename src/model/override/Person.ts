@@ -16,6 +16,7 @@ import { lib } from 'oda-gen-common';
 const { selectionTree: traverse } = lib;
 
 export class PersonEntity extends common.types.GQLModule {
+  protected _name = 'PersonEntity';
   protected _resolver = {
     Person: {
       ages: async (

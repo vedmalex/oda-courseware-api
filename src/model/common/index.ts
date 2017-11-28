@@ -5,6 +5,7 @@ import { LoginUserMutation } from './mutations/login.resolver';
 import { LodashModule } from 'oda-lodash';
 
 export class CommonExtends extends common.types.GQLModule {
+  protected _name = 'CommonExtends';
   protected _extend = [
     new FixupPasswordHook({}),
     new LoginUserMutation({}),

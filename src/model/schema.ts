@@ -9,6 +9,7 @@ import { CommonExtends } from './common';
 import { Overrides } from './override';
 
 export class SystemSchema extends common.types.GQLModule {
+  protected _name = 'SystemSchema';
   protected _extend = [
     new SystemPackage({}),
     new CommonExtends({}),
