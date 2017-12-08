@@ -16,5 +16,12 @@ export default {
         opposite: 'students',
       },
     },
+    meetings: {
+      relation: {
+        belongsToMany: "Meeting#",
+        using: "StudentAttendance#student",
+      }
+    }
   },
+
 };

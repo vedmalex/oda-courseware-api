@@ -13,6 +13,8 @@ export default {
     'PhoneType',
     'Email',
     'EmailType',
+    'StudentAttendance',
+    'Meeting',
   ],
   'mutations': [],
 };
