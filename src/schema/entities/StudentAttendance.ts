@@ -23,6 +23,7 @@ export default {
       type: 'boolean',
     },
     specialNotes: {
+      type: 'richText',
     },
   }
 }

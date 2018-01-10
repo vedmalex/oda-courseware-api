@@ -4,6 +4,13 @@ export default {
     name: {
       identity: true,
     },
+    course: {
+      indexed: true,
+      relation: {
+        belongsTo: 'Course#',
+        opposite: 'groups',
+      }
+    },
     students: {
       relation: {
         hasMany: 'Student#group',

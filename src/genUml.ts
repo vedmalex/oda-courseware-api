@@ -10,5 +10,6 @@ generator({
     ts: false,
     packages: true,
     schema: true,
+    ui: false,
   },
 });

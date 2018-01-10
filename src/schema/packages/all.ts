@@ -1,6 +1,7 @@
 export default {
-  'name': 'All',
-  'abstract': true,
+  'name': 'all',
+  'abstract': false,
+  'acl': 100,
   'entities': [
     'Student',
     'Curator',
@@ -15,6 +16,9 @@ export default {
     'EmailType',
     'StudentAttendance',
     'Meeting',
+    'Subject',
+    'Course',
+    'SubjectCourse',
   ],
   'mutations': [],
 };

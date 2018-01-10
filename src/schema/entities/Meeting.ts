@@ -23,7 +23,12 @@ export default {
         using: "StudentAttendance#meeting",
         fields: {
           present: { type: 'boolean' },
-          specialNotes: {}
+          specialNotes: {
+            type: 'richText',
+          },
+          superpuper: {
+
+          }
         }
       }
     }
