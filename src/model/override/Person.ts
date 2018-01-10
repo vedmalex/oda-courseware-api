@@ -10,10 +10,6 @@ import {
 } from 'graphql-relay';
 
 import RegisterConnectors from '../connectors';
-import { idToCursor, emptyConnection, pagination, detectCursorDirection, consts, Filter } from 'oda-api-graphql';
-
-import { lib } from 'oda-gen-common';
-const { selectionTree: traverse } = lib;
 
 export class PersonEntity extends common.types.GQLModule {
   protected _name = 'PersonEntity';

@@ -11,6 +11,9 @@ import EmailType from './EmailType';
 import Person from './Person';
 import Meeting from './Meeting';
 import StudentAttendance from './StudentAttendance';
+import Course from './Course';
+import Subject from './Subject';
+import SubjectCourse from './SubjectCourse';
 
 export default [
   User,
@@ -26,4 +29,7 @@ export default [
   PhoneType,
   Meeting,
   StudentAttendance,
+  Course,
+  Subject,
+  SubjectCourse,
 ];

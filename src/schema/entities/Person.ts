@@ -46,6 +46,7 @@ export default {
       }
     },
     specialNotes: {
+      type: 'richText',
       indexed: true,
     }
   },

@@ -2,6 +2,12 @@ export default {
   name: 'StudentAttendance',
   description: 'StudentAttendance',
   fields: {
+    student: {
+      indexed: true,
+    },
+    meeting: {
+      indexed: true,
+    },
     meetingLink: {
       indexed: true,
       relation: {
@@ -19,6 +25,7 @@ export default {
       type: 'boolean',
     },
     specialNotes: {
+      type: 'richText',
     },
   }
 }
