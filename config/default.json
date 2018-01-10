@@ -15,16 +15,7 @@
       "url": "mongodb://localhost/api-curators-group"
     },
     "api2": {
-      "url": "mysql://root:toor@127.0.0.1/api-new-ui-gen-test",
-      "config": {
-        "host": "127.0.0.1",
-        "dialect": "mysql",
-        "pool": {
-          "max": 5,
-          "min": 0,
-          "idle": 10000
-        }
-      }
+      "url": "sqlite://api-new-ui-gen-test.sqlite"
     }
   },
   "passport": {
