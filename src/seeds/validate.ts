@@ -1,7 +1,7 @@
 import { validate } from 'graphql/validation';
 const storedQ = require('./../../data/seed-queries.json');
 import { makeExecutableSchema } from 'graphql-tools';
-import { SystemSchema } from '../model/schema';
+import { system as SystemSchema } from '../model/schema';
 
 function prepareSchema() {
   let current = new SystemSchema({});

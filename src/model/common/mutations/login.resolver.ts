@@ -1,6 +1,7 @@
 import { mutateAndGetPayload } from 'oda-api-graphql';
 import { passport } from 'oda-api-common';
 import { common } from 'oda-gen-graphql';
+import { getAcl } from './../../resolvers/acl';
 
 export class LoginUserMutation extends common.types.GQLModule {
   protected _name = 'LoginUserMutation';
@@ -15,7 +16,8 @@ export class LoginUserMutation extends common.types.GQLModule {
         info
       ) => {
         let result: {
-          token?: string,
+          token?: string;
+          role: string;
         };
 
         let user = await context.systemGQL({
@@ -48,9 +50,9 @@ export class LoginUserMutation extends common.types.GQLModule {
 
         // password didn't stored in open way
         let { salt, hash } = JSON.parse(user.password);
-
         result = {
           token: await passport.loginBearer(user.id, args.password, salt, hash),
+          role: await getAcl(user.id) || 'public',
         };
 
         return result;

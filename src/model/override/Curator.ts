@@ -5,9 +5,6 @@ import * as _ from 'lodash';
 import * as get from 'lodash/get';
 
 let logger = log4js.getLogger('graphql:query:Student');
-import {
-  globalIdField,
-} from 'graphql-relay';
 
 import RegisterConnectors from '../connectors';
 
@@ -24,7 +21,6 @@ export class CuratorEntity extends common.types.GQLModule {
         context: { connectors: RegisterConnectors },
         info) => {
         let result;
-        debugger;
         let person = await context.connectors.Person.findOneById(personId);
         if (person) {
           result = person.spiritualName;
@@ -35,12 +31,11 @@ export class CuratorEntity extends common.types.GQLModule {
         {
           _id: id,
           person: personId,
-         }, // owner id
+        }, // owner id
         args,
         context: { connectors: RegisterConnectors },
         info) => {
         let result;
-        debugger;
         let person = await context.connectors.Person.findOneById(personId);
         if (person) {
           result = person.fullName;

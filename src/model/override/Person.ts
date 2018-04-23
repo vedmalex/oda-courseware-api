@@ -5,9 +5,6 @@ import * as _ from 'lodash';
 import * as get from 'lodash/get';
 
 let logger = log4js.getLogger('graphql:query:Student');
-import {
-  globalIdField,
-} from 'graphql-relay';
 
 import RegisterConnectors from '../connectors';
 

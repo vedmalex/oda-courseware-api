@@ -1,7 +1,7 @@
 {
-  "name": "api-new-ui-gen",
+  "name": "api-courseware",
   "version": "1.0.0",
-  "description": "sample api for uiTemplate",
+  "description": "sample api-complex",
   "main": "dist/app.js",
   "scripts": {
     "watch": "tsc -w -p ./",
@@ -21,33 +21,34 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "apollo-cache-inmemory": "^1.1.12",
+    "apollo-client": "^2.2.8",
+    "apollo-link-batch-http": "^1.2.1",
     "apollo-upload-server": "^2.0.4",
-    "body-parser": "^1.17.2",
-    "compression": "^1.6.2",
-    "dotenv": "^4.0.0",
-    "graphql-subscriptions": "^0.4.4",
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.2",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.0",
+    "graphql-subscriptions": "^0.5.8",
     "graphql-tag": "^2.4.2",
     "lodash": "^4.17.4",
     "log4js": "^1.1.1",
-    "mysql2": "^1.4.0",
-    "oda-aor-rest": "0.1.22",
-    "oda-api-common": "^0.2.10",
-    "oda-api-graphql": "^0.4.18",
-    "oda-gen-common": "0.0.15",
-    "oda-gen-graphql": "^0.4.77",
-    "oda-isomorfic": "0.0.13",
-    "oda-lodash": "^0.0.53",
-    "oda-model": "^0.0.29",
-    "sqlite3": "^3.1.13",
-    "subscriptions-transport-ws": "^0.9.5"
+    "oda-api-common": "^0.2.31",
+    "oda-api-graphql": "^0.4.35",
+    "oda-gen-common": "^0.1.12",
+    "oda-gen-graphql": "^0.6.10",
+    "oda-isomorfic": "^0.0.31",
+    "oda-lodash": "^0.1.12",
+    "subscriptions-transport-ws": "^0.9.7"
   },
   "devDependencies": {
     "@types/fs-extra": "^4.0.0",
     "@types/inflected": "^1.1.29",
     "@types/mongoose": "^4.7.20",
+    "@types/graphql": "^0.12.4",
     "@types/node": "^8.0.24",
-    "@types/passport": "^0.3.3",
-    "graphql-document-collector": "^0.1.3",
-    "typescript": "^2.4.2"
+    "@types/passport": "^0.4.3",
+    "graphql-document-collector": "^0.2.1",
+    "typescript": "~2.6.2"
   }
 }

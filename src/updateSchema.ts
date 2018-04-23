@@ -5,7 +5,7 @@ import * as path from 'path';
 import { graphql, GraphQLSchema } from 'graphql';
 import { introspectionQuery } from 'graphql/utilities';
 import { makeExecutableSchema } from 'graphql-tools';
-import { SystemSchema } from './model';
+import { system as SystemSchema } from './model/schema';
 
 // Save JSON of full schema introspection for Babel Relay Plugin to use
 (async () => {

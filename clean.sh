@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 rm -rf dist
-rm -fr node_modules
-rm -fr out
-rm -fr logs
-rm -fr src/graphql-gen
-rm -fr data/schema.graphql
-rm -fr data/schema.json
-rm -fr data/seed-queries.json
+rm -rf node_modules
+rm -rf out
+rm -rf logs
+rm -rf src/graphql-gen
+rm -rf data/schema.graphql
+rm -rf data/schema.json
+rm -rf data/seed-queries.json
 rm -rf yarn.lock
 rm -rf failed.js
 rm -rf .yarnclean

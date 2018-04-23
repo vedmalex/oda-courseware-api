@@ -1,5 +1,6 @@
 dist
 logs
+.DS_Store
 node_modules
 graphql-gen
 data/schema.json

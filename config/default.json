@@ -1,7 +1,7 @@
 {
-  "AppName": "api-new-ui-gen",
+  "AppName": "api-courseware",
   "hosts": {
-    "api-new-ui-gen": {
+    "api-courseware": {
       "host": "localhost",
       "port": 3003
     }
@@ -12,15 +12,12 @@
   },
   "db": {
     "api": {
-      "url": "mongodb://localhost/api-curators-group"
-    },
-    "api2": {
-      "url": "sqlite://api-new-ui-gen-test.sqlite"
+      "url": "mongodb://localhost/api-courseware"
     }
   },
   "passport": {
-    "salt2": "aW/sPfrYMjn2Wh6v6jQAnYhJzHSTZqitDiiASvrNtJma3+gHjdCkYw==",
-    "secret": "THE VERY api-new-ui-gen AuaVlY5R1Z5hWfdjVDC3qqUBSQVgx3mqDROlU0xJQziwC0mhVjCZ9Q== ONE",
+    "salt2": "1ty5I4+ntx6RRNjBKRL1ckF2UpWmAM9s0V7y5JdrndNQo26ZBPXTQA==",
+    "secret": "THE VERY api-model-editor uwkFM68zadlOVpH9nAZdGAxsDEE35pSKHd7VnmIm80acudewhT+QzQ== ONE",
     "expiresIn": "1h"
   }
 }

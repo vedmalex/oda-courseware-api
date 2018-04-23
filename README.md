@@ -1,7 +1,9 @@
-# run api-new-ui-gen
+#run
+
+use configured private repository
 
 install deps
-`npm`
+`yarn`
 
 compile code
 `npm run compile`
@@ -10,9 +12,10 @@ restore inital data
 `npm run restoreData`
 
 run api
-`node start`
+`npm start`
 
+run graphiql the folder above
+
+use  `DEBUG=express:server npm start` to run with extended debug log
 use `src/register.ts` to configure logger
 check `src/schema/packages` to generate diagrams
-
-Checkout sample queries for the sample schema
