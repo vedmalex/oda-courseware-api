@@ -3,9 +3,11 @@ export default {
   fields: {
     spiritualName: {
       identity: true,
+      indexed: 'text',
     },
     fullName: {
       identity: true,
+      indexed: 'text',
     },
     dateOfBirth: {
       type: 'Date',
