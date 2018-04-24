@@ -15,5 +15,8 @@ export default {
     {
       name: 'token',
     },
+    {
+      name: 'role',
+    },
   ],
 };

@@ -1,6 +1,6 @@
 export default {
   'name': 'all',
-  'abstract': false,
+  'abstract': true,
   'acl': 100,
   'entities': [
     'Student',
